@@ -63,6 +63,8 @@ const App = () => {
       </Route>
       </Routes>
 
+      {/* end of frontend */}
+
     
 
     </>
