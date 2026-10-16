@@ -1,29 +1,29 @@
 import { XIcon } from "lucide-react"
 
-interface AddressFormProps {
-    resetForm: () => void;
-    handleSubmit: (e: React.FormEvent) => void;
-    form: {
-        label: string;
-        address: string;
-        city: string;
-        state: string;
-        zip: string;
-        isDefault: boolean;
-    };
-    setForm: React.Dispatch<React.SetStateAction<any>>;
-    editingId: string | null;
-}
+// interface AddressFormProps {
+//     resetForm: () => void;
+//     handleSubmit: (e: React.FormEvent) => void;
+//     form: {
+//         label: string;
+//         address: string;
+//         city: string;
+//         state: string;
+//         zip: string;
+//         isDefault: boolean;
+//     };
+//     setForm: React.Dispatch<React.SetStateAction<any>>;
+//     editingId: string | null;
+// }
 
-const AddressForm = ({ resetForm, handleSubmit, form, setForm, editingId }: AddressFormProps) => {
+const AddressForm = ({ resetForm, handleSubmit, form, setForm, editingId }: any) => {
 
-    const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        const { name, value, type, checked } = e.target;
-        setForm((prev: typeof form) => ({
-            ...prev,
-            [name]: type === "checkbox" ? checked : value
-        }));
-    };
+    // const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    //     const { name, value, type, checked } = e.target;
+    //     setForm((prev: typeof form) => ({
+    //         ...prev,
+    //         [name]: type === "checkbox" ? checked : value
+    //     }));
+    // };
 
     return (
         <>
